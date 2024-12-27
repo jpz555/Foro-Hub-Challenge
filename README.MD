@@ -155,6 +155,7 @@ Si tienes Git instalado, verás la versión. Si no, descarga e instala Git desde
 
 ### 5. ‍💻👨‍💻 Uso de la apliccación <a id="sistema"></a>
 Para usar a la aplicación primero debemos crear una cuenta, para esto, crearemos un usuario de prueba y simularemos el proceso de creación de comentarios.
+
 1. Registro de un usuario.
 Para hacer él envió de los datos para registrarnos debemos hacer el uso del método ```POST ``` como se puede observar en la siguiente imagen.
 <p align="center"> 
@@ -162,7 +163,8 @@ Para hacer él envió de los datos para registrarnos debemos hacer el uso del m�
 </p>
 
 Ya tenemos registrado el usuario, sin embargo, todavía no tenemos autorización para crear tópicos o comentar otros tópicos.
-2.	Ahora, vamos a generar un token para tener acceso a los permisos de usuarios registrados. También con un método ```POST ``` pero un dirección diferente.
+
+2. Ahora, vamos a generar un token para tener acceso a los permisos de usuarios registrados. También con un método ```POST ``` pero un dirección diferente.
 <p align="center"> 
 <img height="360px"  width="720px" src="imagenes/obtener_token_usuario.png">
 </p>
@@ -182,8 +184,8 @@ Al tener el token podemos acceder   a través de sistema enviando el token en el
 
 Como vemos en la imagen la respuesta es exitosa, Código 200. 
 Miramos la respuesta del sistema y vemos que nos devuelve el id, ahora vamos a buscar ese id en otro endpoint.
-4. 
-5. Con el método ```GET ```podemos obtener el tópico específico y todos sus datos como: titulo, mensaje, autor, comentarios, fecha de creación, estado.
+
+4. Con el método ```GET ```podemos obtener el tópico específico y todos sus datos como: titulo, mensaje, autor, comentarios, fecha de creación, estado.
 
 <p align="center"> 
 <img height="360px"  width="720px" src="imagenes/ver_topico_especifico.png">
@@ -191,15 +193,15 @@ Miramos la respuesta del sistema y vemos que nos devuelve el id, ahora vamos a b
 
 Sin embargo, creo que tiene un error de ortografía o me falto añadir información personal.
 Para eso podemos hacer un método ```PUT ```
-6. Con el método ```PUT ``` usamos la misma URL y el id del tópico, la misma url que el método anterior pero un método http diferente.
+5. Con el método ```PUT ``` usamos la misma URL y el id del tópico, la misma url que el método anterior pero un método http diferente.
 
 <p align="center"> 
 <img height="360px"  width="720px" src="imagenes/actualizar_topico.png">
 </p>
 
 Como observamos en la imagen tenemos que colocar la clave que vamos a editar y el nuevo valor que deseamos añadir o modificar.
-7. 
-8. Ahora, que pasa si ya resolví mi problema de compilación, y quiero compartirlo con todos, para esto podemos hacer un comentario de este tópico y poder detallar nuestra solución.
+
+6. Ahora, que pasa si ya resolví mi problema de compilación, y quiero compartirlo con todos, para esto podemos hacer un comentario de este tópico y poder detallar nuestra solución.
 Como podemos ver en la siguiente imagen vamos a responder un tópico.
 
 <p align="center"> 
@@ -220,7 +222,7 @@ Como podemos observar ahora tenemos un tópico el cual ya tiene una respuesta re
 <img height="360px"  width="720px" src="imagenes/ver_topico_con_respuestas.png">
 </p>
 
-9. Ahora, para efectos de conocimiento, ya creamos nuestro tópico y ya está solucionado, y ahora quiero vaciar mi bandeja de tópicos.
+7. Ahora, para efectos de conocimiento, ya creamos nuestro tópico y ya está solucionado, y ahora quiero vaciar mi bandeja de tópicos.
 En este caso podemos realizar ejecutar un nuevo método http ahora usando un método ```DELETE ```. 
 <p align="center"> 
 <img height="360px"  width="720px" src="imagenes/eliminar_topico.png">
