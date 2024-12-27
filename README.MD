@@ -158,13 +158,13 @@ Para usar a la aplicación primero debemos crear una cuenta, para esto, crearemo
 1. Registro de un usuario.
 Para hacer él envió de los datos para registrarnos debemos hacer el uso del método ```POST ``` como se puede observar en la siguiente imagen.
 <p align="center"> 
-<img height="720px"  width="1280px" src="imagenes/registrar_usuario.png">
+<img height="360px"  width="720px" src="imagenes/registrar_usuario.png">
 </p>
 
 Ya tenemos registrado el usuario, sin embargo, todavía no tenemos autorización para crear tópicos o comentar otros tópicos.
 2.	Ahora, vamos a generar un token para tener acceso a los permisos de usuarios registrados. También con un método ```POST ``` pero un dirección diferente.
 <p align="center"> 
-<img height="720px"  width="1280px" src="imagenes/obtener_token_usuario.png">
+<img height="360px"  width="720px" src="imagenes/obtener_token_usuario.png">
 </p>
 Al tener el token podemos acceder   a través de sistema enviando el token en el encabezado de la solicitud. ```bearer```
 
@@ -177,7 +177,7 @@ Al tener el token podemos acceder   a través de sistema enviando el token en el
 }
 ```
 <p align="center"> 
-<img height="720px"  width="1280px" src="imagenes/Crear%20topico.png">
+<img height="360px"  width="720px" src="imagenes/Crear%20topico.png">
 </p>
 
 Como vemos en la imagen la respuesta es exitosa, Código 200. 
@@ -186,7 +186,7 @@ Miramos la respuesta del sistema y vemos que nos devuelve el id, ahora vamos a b
 5. Con el método ```GET ```podemos obtener el tópico específico y todos sus datos como: titulo, mensaje, autor, comentarios, fecha de creación, estado.
 
 <p align="center"> 
-<img height="720px"  width="1280px" src="imagenes/ver_topico_especifico.png">
+<img height="360px"  width="720px" src="imagenes/ver_topico_especifico.png">
 </p>
 
 Sin embargo, creo que tiene un error de ortografía o me falto añadir información personal.
@@ -194,7 +194,7 @@ Para eso podemos hacer un método ```PUT ```
 6. Con el método ```PUT ``` usamos la misma URL y el id del tópico, la misma url que el método anterior pero un método http diferente.
 
 <p align="center"> 
-<img height="720px"  width="1280px" src="imagenes/actualizar_topico.png">
+<img height="360px"  width="720px" src="imagenes/actualizar_topico.png">
 </p>
 
 Como observamos en la imagen tenemos que colocar la clave que vamos a editar y el nuevo valor que deseamos añadir o modificar.
@@ -203,7 +203,7 @@ Como observamos en la imagen tenemos que colocar la clave que vamos a editar y e
 Como podemos ver en la siguiente imagen vamos a responder un tópico.
 
 <p align="center"> 
-<img height="720px"  width="1280px" src="imagenes/comentar_topico.png">
+<img height="360px"  width="720px" src="imagenes/comentar_topico.png">
 </p>
 
 ```
@@ -217,13 +217,13 @@ Para comentar un tópico, debemos conocer su id y después ingresar un mensaje d
 
 Como podemos observar ahora tenemos un tópico el cual ya tiene una respuesta registrada.
 <p align="center"> 
-<img height="720px"  width="1280px" src="imagenes/ver_topico_con_respuestas.png">
+<img height="360px"  width="720px" src="imagenes/ver_topico_con_respuestas.png">
 </p>
 
 9. Ahora, para efectos de conocimiento, ya creamos nuestro tópico y ya está solucionado, y ahora quiero vaciar mi bandeja de tópicos.
 En este caso podemos realizar ejecutar un nuevo método http ahora usando un método ```DELETE ```. 
 <p align="center"> 
-<img height="720px"  width="1280px" src="imagenes/eliminar_topico.png">
+<img height="360px"  width="720px" src="imagenes/eliminar_topico.png">
 </p>
 
 Como pudimos ver esta es solo una pequeña parte de lo que podemos hacer con nuestra API REST.
