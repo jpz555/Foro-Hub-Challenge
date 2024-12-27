@@ -1,0 +1,1 @@
+alter table topicos drop column autor;
